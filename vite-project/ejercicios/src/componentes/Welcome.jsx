@@ -1,5 +1,5 @@
 
 
 export function Welcome ({name}) {
-    return <p>welcome, {name}!</p>
+    return (name ? <p>welcome, {name}!</p> : <p>Bienvenido!</p>)
 }
