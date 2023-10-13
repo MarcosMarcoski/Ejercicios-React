@@ -1,6 +1,6 @@
 export function AlertClock() {
   function handleButtonClick() {
-    const now = new data();
+    const now = new Date();
     alert(`the current time is ${now.toLocalTimeString()}`);
   }
 
