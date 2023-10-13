@@ -1,11 +1,11 @@
-import { Age } from "./Age";
-export function Welcome({ name }) {
+export function Welcome({ name, age }) {
   return (
     <div>
       <p>
         welcome, <strong>{name}</strong>!
       </p>
-      <Age Age={30}></Age>
+
+      {age > 18 && <p>You are {age} years old.</p>}
     </div>
   );
 }
