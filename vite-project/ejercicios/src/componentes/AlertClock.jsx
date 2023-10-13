@@ -1,12 +1,15 @@
+import { Button } from "./Button";
+
 export function AlertClock() {
-  function handleButtonClick() {
+  function handleShowTime() {
     const now = new Date();
     alert(`the current time is ${now.toLocaleDateString()}`);
   }
 
   return (
     <div>
-      <button onClick={handleButtonClick}>click me!</button>
+      <p>click the button below to show the current time!</p>
+      <Button onclick={handleShowTime} label={"click me!"} />
     </div>
   );
 }
