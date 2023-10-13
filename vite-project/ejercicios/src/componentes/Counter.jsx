@@ -5,7 +5,13 @@ export function Counter({start = 0}) {
   const [counter, setCounter] = useState(start);
 
   function increment() {
-    setCounter((c)=> c + 1);
+    setCounter(counter + 1);
+  }
+  function decrement() {
+    setCounter(counter - 1);
+  }
+  function reset () {
+    setCounter(0);
   }
 
 
@@ -14,6 +20,8 @@ export function Counter({start = 0}) {
     <div>
         <CounterDisplay counter={counter} />
       <button onClick={increment}>INCREMENT</button>
+      <button onClick={decrement}>DECREMENT</button>
+      <button onClick={reset}>RESET</button>
     </div>
   );
 }
