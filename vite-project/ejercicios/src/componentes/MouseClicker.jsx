@@ -4,6 +4,7 @@ export function MouseClicker() {
   }
   function handleImage(event) {
     console.log(event.currenTarget.img);
+    event.stopPropagation();
   }
 
   return (
@@ -14,4 +15,4 @@ export function MouseClicker() {
   );
 }
 
-// sigue imprimiendo el name "one" porque la imagen está dentro del button
+
