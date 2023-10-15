@@ -2,6 +2,7 @@ import { AlertClock } from "./componentes/AlertClock";
 import { Clock } from "./componentes/Clock";
 import { Counter } from "./componentes/Counter";
 import { MouseClicker } from "./componentes/MouseClicker";
+import { MultiButton } from "./componentes/MutiButton";
 import { Welcome } from "./componentes/Welcome";
 
 export function App() {
@@ -11,7 +12,9 @@ export function App() {
       <Counter/>
       {/* <Clock/> */}
 
-      <MouseClicker/>
+      {/* <MouseClicker/> */}
+
+      <MultiButton/>
 
     
     </div>
