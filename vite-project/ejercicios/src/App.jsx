@@ -9,7 +9,7 @@ export function App() {
     <div>
       <Welcome name={"John"} age={16} />
       <Counter/>
-      <Clock/>
+      {/* <Clock/> */}
 
       <MouseClicker/>
 
