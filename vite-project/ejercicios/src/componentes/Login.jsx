@@ -19,7 +19,12 @@ export function Login({ onLogin }) {
     }
   };
 
-  const isButtonDisabled = (!username && !password);
+  const isButtonDisabled = !username && !password;
+
+  const handleResetClick = () => {
+    setUsername("");
+    setPassword("");
+  };
 
   return (
     <div>
@@ -48,6 +53,15 @@ export function Login({ onLogin }) {
       <button onClick={handleLoginClick} disabled={isButtonDisabled}>
         Login
       </button>
+
+      <div>
+        <button type="button" onClick={handleResetClick}>
+          Reset
+        </button>
+        <button onClick={handleLoginClick} disabled={isButtonDisabled}>
+          Login
+        </button>
+      </div>
     </div>
   );
 }
