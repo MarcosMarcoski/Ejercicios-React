@@ -56,7 +56,7 @@ export function Login({ onLogin }) {
           />
         </div>
         <label>
-          <input type="checkbox" name="rememberMe" onChange={onLogin} />
+          <input type="checkbox" name="rememberMe" onChange={handleLoginClick} />
           Remember Me!
         </label>
         <div>

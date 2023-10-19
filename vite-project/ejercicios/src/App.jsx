@@ -6,6 +6,8 @@ import { MouseClicker } from "./componentes/MouseClicker";
 import { MultiButton } from "./componentes/MutiButton";
 import { Welcome } from "./componentes/Welcome";
 import { Login } from "./componentes/Login";
+import { Formulario } from "./componentes/Formuario";
+import { Colors } from "./componentes/Colors";
 
 export function App() {
   return (
@@ -21,6 +23,10 @@ export function App() {
 
 
       <Login/>
+
+      <Formulario/>
+
+      <Colors items={["orange", "blue", "red", "green", "yellow"]}/>
     </div>
   );
 }
