@@ -26,7 +26,13 @@ export function App() {
 
       <Formulario/>
 
-      <Colors items={["orange", "blue", "red", "green", "yellow"]}/>
+      <Colors items={[
+        {id:1, name:"blue"},
+        {id:2, name:"orange"},
+        {id:3, name:"red"},
+        {id:4, name:"green"},
+        {id:5, name:"yellow"}
+      ]}/>
     </div>
   );
 }
