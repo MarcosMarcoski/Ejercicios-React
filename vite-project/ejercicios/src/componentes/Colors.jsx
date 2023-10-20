@@ -1,9 +1,14 @@
-export function Colors({items}) {
+import { Color } from "./color"
+
+export function Colors() {
+    
+    const ListColors = ["orange", "blue", "green"]
+    
   return (
     <ul>
-      {items.map((color) => (
-        <li key={color.id}>{color.name}</li>
-      ))}
+        {ListColors.map((color, index) => (
+          <Color key={index} color={color} />
+        ))}
     </ul>
   );
 }
