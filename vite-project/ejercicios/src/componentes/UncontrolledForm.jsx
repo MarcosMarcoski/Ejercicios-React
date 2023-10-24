@@ -1,7 +1,7 @@
 export function UncontrolledLogin() {
   function handleFormSubmit(e) {
     event.preventDefault();
-    const username = e.target.elements.username.value;
+    const username = e.target.elements.username.value; //se está utilizando en las variables username y password
     const password = e.target.elements.password.value;
     const data = { username, password };
     console.log(data);
