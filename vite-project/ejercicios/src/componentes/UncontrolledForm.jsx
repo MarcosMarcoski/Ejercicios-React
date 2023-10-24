@@ -1,9 +1,12 @@
 export function UncontrolledLogin() {
   function handleFormSubmit(e) {
     event.preventDefault();
-    const username = e.target.elements.username.value; //se está utilizando en las variables username y password
-    const password = e.target.elements.password.value;
-    const data = { username, password };
+    const formData = new FormData(e.target);
+        const data = {
+            username : formData.get('username'),
+            password : formData.get('password'),
+            session : formData.get('session') === 'on' ? true : false,
+        }
     console.log(data);
   }
   return (
@@ -17,3 +20,7 @@ export function UncontrolledLogin() {
     </form>
   );
 }
+
+// desventaja: no siempre es compatible con todos los navegadores
+
+// ventaja: es muy eficaz en formularios HTML
