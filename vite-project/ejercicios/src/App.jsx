@@ -8,6 +8,7 @@ import { Welcome } from "./componentes/Welcome";
 import { Login } from "./componentes/Login";
 import { Formulario } from "./componentes/Formuario";
 import { Colors } from "./componentes/Colors";
+import { UncontrolledLogin } from "./componentes/UncontrolledForm";
 
 export function App() {
   return (
@@ -17,15 +18,17 @@ export function App() {
 
       {/* <MouseClicker/> */}
 
-      <MultiButton />
+      {/* <MultiButton /> */}
 
-      <InteractiveWelcome />
+      {/* <InteractiveWelcome /> */}
 
-      <Login />
+      {/* <Login /> */}
 
-      <Formulario />
+      {/* <Formulario /> */}
 
-      <Colors />
+      {/* <Colors /> */}
+
+      <UncontrolledLogin/>
     </div>
   );
 }
