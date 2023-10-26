@@ -1,6 +1,6 @@
 export function Welcome({ name, age }) {
   return (
-    <div>
+    <div className="welcome">
       
        <p> welcome, <strong>{name}</strong>!</p>
       

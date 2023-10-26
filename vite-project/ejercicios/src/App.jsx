@@ -13,6 +13,7 @@ import { FocusableInput } from "./componentes/FocusableInput";
 import {StrictMode} from "./componentes/StrictMode";
 import { TodoList } from "./componentes/TodoList";
 
+
 export function App() {
   return (
     <div>
@@ -38,6 +39,7 @@ export function App() {
       {/* <StrictMode/> */}
 
       <TodoList/>
+      <Welcome/>
     </div>
   );
 }
