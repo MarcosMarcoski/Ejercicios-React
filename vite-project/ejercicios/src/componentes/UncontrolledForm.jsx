@@ -1,6 +1,6 @@
 export function UncontrolledLogin() {
   function handleFormSubmit(e) {
-    event.preventDefault();
+    e.preventDefault();
     const formData = new FormData(e.target);
         const data = {
             username : formData.get('username'),
