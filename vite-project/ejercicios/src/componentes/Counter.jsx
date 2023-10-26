@@ -2,6 +2,10 @@ import { useEffect, useState, useRef } from "react";
 import { CounterDisplay } from "./CounterDisplay";
 
 export function Counter({ start = 0 }) {
+  const MyStyle ={
+    backgroundColor: 'orange',
+    border: '3px solid red',
+  }
   const [counter, setCounter] = useState(start);
   const directionRef = useRef(null);
   useEffect(() => {
@@ -22,7 +26,7 @@ export function Counter({ start = 0 }) {
   }
 
   return (
-    <div>
+    <div style={MyStyle}>
       <CounterDisplay counter={counter} />
       <button onClick={increment}>INCREMENT</button>
       <button onClick={decrement}>DECREMENT</button>
