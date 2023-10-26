@@ -9,7 +9,11 @@ export function TodoList() {
       setItems([...items, inputValue]);
       setInputValue("");
     }
+   
   };
+  const handleReset = () => {
+    setItems([]); 
+};
   return (
     <div>
       <ul>
@@ -24,6 +28,7 @@ export function TodoList() {
           onChange={(e) => setInputValue(e.target.value)}
         />
         <button onClick={handleAddItem}>Agregar</button>
+        <button onClick={handleReset}>Reset</button>
       </div>
     </div>
   );
