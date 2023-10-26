@@ -9,8 +9,8 @@ import { Login } from "./componentes/Login";
 import { Formulario } from "./componentes/Formuario";
 import { Colors } from "./componentes/Colors";
 import { UncontrolledLogin } from "./componentes/UncontrolledForm";
-import FocusableInput, {FocusableComponent} from "./componentes/FocusableInput";
-import StrictMode from "./componentes/StrictMode";
+import { FocusableInput } from "./componentes/FocusableInput";
+import {StrictMode} from "./componentes/StrictMode";
 
 export function App() {
   return (
@@ -34,7 +34,7 @@ export function App() {
 
       {/* <FocusableInput/> */}
 
-      <StrictMode/>
+      {/* <StrictMode/> */}
     </div>
   );
 }

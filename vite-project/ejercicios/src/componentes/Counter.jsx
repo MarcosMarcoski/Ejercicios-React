@@ -1,11 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { CounterDisplay } from "./CounterDisplay";
 
 export function Counter({ start = 0 }) {
   const [counter, setCounter] = useState(start);
+  const directionRef = useRef(null);
   useEffect(() => {
-    console.log("el valor es:", counter);
-  }, [counter]);
+    if (!directionRef.current) {
+      const direction = counter > start ? "up" : "down";
+      console.log(`La dirección es: ${direction}`);
+    }
+  }, [counter, start]);
 
   function increment() {
     setCounter(counter + 1);
@@ -14,7 +18,7 @@ export function Counter({ start = 0 }) {
     setCounter(counter - 1);
   }
   function reset() {
-    setCounter(0);
+    setCounter(start);
   }
 
   return (

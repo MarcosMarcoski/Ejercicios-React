@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export default function FocusableInput() {
+export function FocusableInput() {
   const inputRef = useRef(null);
 
   useEffect(() => {

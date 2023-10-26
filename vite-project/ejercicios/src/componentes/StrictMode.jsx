@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export default function StrictMode() {
+export function StrictMode() {
   const strictMode = useRef(false);
 
   useEffect(() => {
