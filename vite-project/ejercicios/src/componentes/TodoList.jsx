@@ -20,7 +20,7 @@ export function TodoList() {
     };
   
     return (
-      <div>
+      <div className="todoList-arriba">
         <ul>
           {items.map((item, index) => (
             <li key={index}>
@@ -30,13 +30,13 @@ export function TodoList() {
           ))}
         </ul>
         <div>
-          <input
+          <input className="input-list"
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
           />
-          <button onClick={handleAddItem}>Agregar</button>
-          <button onClick={handleReset}>Reset</button>
+          <button className="button-green" onClick={handleAddItem}>Agregar</button>
+          <button className="button-red" onClick={handleReset}>Reset</button>
         </div>
       </div>
     );
