@@ -11,6 +11,7 @@ import { Colors } from "./componentes/Colors";
 import { UncontrolledLogin } from "./componentes/UncontrolledForm";
 import { FocusableInput } from "./componentes/FocusableInput";
 import {StrictMode} from "./componentes/StrictMode";
+import { TodoList } from "./componentes/TodoList";
 
 export function App() {
   return (
@@ -35,6 +36,8 @@ export function App() {
       {/* <FocusableInput/> */}
 
       {/* <StrictMode/> */}
+
+      <TodoList/>
     </div>
   );
 }
