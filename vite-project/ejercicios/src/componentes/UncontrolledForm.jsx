@@ -1,3 +1,4 @@
+
 export function UncontrolledLogin() {
   function handleFormSubmit(e) {
     e.preventDefault();
@@ -10,9 +11,9 @@ export function UncontrolledLogin() {
     console.log(data);
   }
   return (
-    <form onSubmit={handleFormSubmit}>
-      <h1>Uncontrolled Form</h1>
-      <input type="text" name="username" />
+    <form  onSubmit={handleFormSubmit}>
+      <h1 className="bg-blue-200">Uncontrolled Form</h1>
+      <input className="border rounded p-4 bg-pink-200" type="text" name="username" />
       <input type="password" name="password" />
       <input type="checkbox" name="session" />
       <button>Login</button>

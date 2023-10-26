@@ -30,7 +30,7 @@ export function App() {
 
       {/* <Colors /> */}
 
-      {/* <UncontrolledLogin/> */}
+      <UncontrolledLogin/>
 
       {/* <FocusableInput/> */}
 

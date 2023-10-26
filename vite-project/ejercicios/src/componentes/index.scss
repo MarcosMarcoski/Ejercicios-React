@@ -1,26 +1,33 @@
-.welcome{
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+
+.welcome {
     background-color: orange;
     border: 3px solid red;
     margin: 5px;
 }
 
-.clock{
+.clock {
     background-color: orange;
     border: 3px solid red;
     margin: 5px;
 }
 
-.todoList-arriba{
+.todoList-arriba {
     background-color: orange;
     border: 3px solid red;
     gap: 5px;
 
-    .button-green{
+    .button-green {
         background-color: green;
         color: white;
     }
 
-    .button-red{
+    .button-red {
         background-color: red;
         color: white;
     }
