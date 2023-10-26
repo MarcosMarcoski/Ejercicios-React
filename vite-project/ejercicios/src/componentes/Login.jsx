@@ -32,6 +32,9 @@ export function Login({ onLogin }) {
       onLogin({ username, password });
     }
   };
+  const MyStyle ={
+    backgroundColor: password.length < 8 ? 'red' : 'green'
+  }
 
   return (
     <div>
@@ -63,7 +66,7 @@ export function Login({ onLogin }) {
           <button type="button" onClick={handleResetClick}>
             Reset
           </button>
-          <button type="submit" disabled={isButtonDisabled}>
+          <button type="submit" disabled={isButtonDisabled} style={MyStyle}>
             Login
           </button>
         </div>
