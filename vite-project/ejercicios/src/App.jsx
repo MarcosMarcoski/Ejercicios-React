@@ -9,6 +9,7 @@ import { Login } from "./componentes/Login";
 import { Formulario } from "./componentes/Formuario";
 import { Colors } from "./componentes/Colors";
 import { UncontrolledLogin } from "./componentes/UncontrolledForm";
+import FocusableInput, {FocusableComponent} from "./componentes/FocusableInput";
 
 export function App() {
   return (
@@ -29,6 +30,8 @@ export function App() {
       {/* <Colors /> */}
 
       {/* <UncontrolledLogin/> */}
+
+      <FocusableInput/>
     </div>
   );
 }
