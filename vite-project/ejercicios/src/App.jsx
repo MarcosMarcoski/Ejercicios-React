@@ -17,7 +17,7 @@ export function App() {
   return (
     <div>
       <Counter />
-      {/* <Clock/> */}
+      <Clock/>
 
       {/* <MouseClicker/> */}
 

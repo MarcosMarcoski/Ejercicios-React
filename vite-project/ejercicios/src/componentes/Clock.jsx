@@ -12,7 +12,7 @@ export function Clock() {
   }, []);
 
   return (
-    <div>
+    <div className="clock">
       <h2>current time: {date.toLocaleTimeString()}</h2>
     </div>
   );
