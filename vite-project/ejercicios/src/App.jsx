@@ -35,7 +35,8 @@ export function App() {
         </select>
         <Clock />
       </div>
-    </LanguageContext.Provider>
+    </LanguageContext.Provider> 
+    {/* El componente clock deja de funcionar correctamente */}
 
       {/* <MouseClicker/> */}
 
