@@ -36,11 +36,11 @@ export function App() {
       <FocusableInput/>
 
       {/* <StrictMode/> */}
-
+<Container title={<h1>Título</h1>}>
       <TodoList />
       <Welcome />
-
-      <Container title={<h1>Título</h1>}/>
+</Container>
+      
     </div>
   );
 }
