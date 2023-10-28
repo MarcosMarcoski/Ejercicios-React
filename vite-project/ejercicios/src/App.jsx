@@ -14,6 +14,7 @@ import { StrictMode } from "./componentes/StrictMode";
 import { TodoList } from "./componentes/TodoList";
 import { Container } from "./componentes/Container";
 import { createContext, useState } from "react";
+import { GitHubUser } from "./componentes/GitHubUser";
 
 export const LanguageContext = createContext('en')
 
@@ -58,6 +59,8 @@ export function App() {
       <TodoList />
       <Welcome />
 </Container>
+
+<GitHubUser username={"Marcoski"}/>
       
     </div>
   );
