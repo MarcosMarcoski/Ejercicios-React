@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react";
 
+import { useState, useEffect, useContext } from "react";
+import { LanguageContext } from "../App";
 export function Clock() {
   const [date, setData] = useState(new Date());
+  const language = useContext(LanguageContext);
 
   useEffect(() => {
     setInterval(() => {
@@ -12,8 +14,8 @@ export function Clock() {
   }, []);
 
   return (
-    <div className="clock">
-      <h2>current time: {date.toLocaleTimeString()}</h2>
-    </div>
+    <h2 className="clock">
+    {language === "en" ? "Time:" : "Hora:"} {date.toLocaleTimeString()}
+  </h2>
   );
 }

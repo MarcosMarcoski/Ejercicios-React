@@ -13,12 +13,29 @@ import { FocusableInput } from "./componentes/FocusableInput";
 import { StrictMode } from "./componentes/StrictMode";
 import { TodoList } from "./componentes/TodoList";
 import { Container } from "./componentes/Container";
+import { createContext, useState } from "react";
+
+export const LanguageContext = createContext('en')
+
 
 export function App() {
+  const [language, setLanguage] = useState("en");
+
+  const handleLanguageChange = (event) => {
+    setLanguage(event.target.value);
+  };
   return (
     <div>
       <Counter />
-      <Clock/>
+      <LanguageContext.Provider value={language}>
+      <div>
+        <select className="idioma" value={language} onChange={handleLanguageChange}>
+          <option value="en">Inglés</option>
+          <option value="es">Español</option>
+        </select>
+        <Clock />
+      </div>
+    </LanguageContext.Provider>
 
       {/* <MouseClicker/> */}
 
