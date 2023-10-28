@@ -3,7 +3,7 @@ import { useState, useEffect, useContext } from "react";
 import { LanguageContext } from "../App";
 export function Clock() {
   const [date, setData] = useState(new Date());
-  const language = useContext(LanguageContext);
+  const language = useContext(LanguageContext);  // <--------- ahí va
 
   useEffect(() => {
     setInterval(() => {
