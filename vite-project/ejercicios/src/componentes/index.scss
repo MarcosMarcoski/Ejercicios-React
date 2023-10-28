@@ -1,6 +1,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
 
 
 
@@ -31,4 +33,9 @@
         background-color: red;
         color: white;
     }
+}
+
+.container {
+    background-color: white;
+    border: 3px solid red;
 }

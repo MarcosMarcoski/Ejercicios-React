@@ -9,7 +9,7 @@ export function FocusableInput() {
   return (
     <div>
       <h2>Focus</h2>
-      <input type="text" ref={inputRef} />
+      <input className="b-example-divider" type="text" ref={inputRef} />
     </div>
   );
 }

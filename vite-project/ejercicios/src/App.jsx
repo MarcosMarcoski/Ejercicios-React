@@ -12,6 +12,7 @@ import { UncontrolledLogin } from "./componentes/UncontrolledForm";
 import { FocusableInput } from "./componentes/FocusableInput";
 import { StrictMode } from "./componentes/StrictMode";
 import { TodoList } from "./componentes/TodoList";
+import { Container } from "./componentes/Container";
 
 export function App() {
   return (
@@ -32,12 +33,14 @@ export function App() {
 
       <UncontrolledLogin/>
 
-      {/* <FocusableInput/> */}
+      <FocusableInput/>
 
       {/* <StrictMode/> */}
 
       <TodoList />
       <Welcome />
+
+      <Container/>
     </div>
   );
 }
