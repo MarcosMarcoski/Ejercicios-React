@@ -15,7 +15,7 @@ import { TodoList } from "./componentes/TodoList";
 import { Container } from "./componentes/Container";
 import { createContext, useState } from "react";
 import { GitHubUser } from "./componentes/GitHubUser";
-
+import { GithubUsers } from "./componentes/GitHubUsers";
 export const LanguageContext = createContext('en')
 
 
@@ -61,6 +61,7 @@ export function App() {
 </Container>
 
 <GitHubUser username={"Marcoski"}/>
+<GithubUsers />
       
     </div>
   );
