@@ -40,7 +40,7 @@ export function App() {
       <TodoList />
       <Welcome />
 
-      <Container/>
+      <Container title={<h1>Título</h1>}/>
     </div>
   );
 }

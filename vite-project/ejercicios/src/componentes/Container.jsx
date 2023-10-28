@@ -1,3 +1,3 @@
-export function Container() {
-  return <div className="container">Hola</div>;
+export function Container({title}) {
+  return <div className="container">{title}</div>;
 }
