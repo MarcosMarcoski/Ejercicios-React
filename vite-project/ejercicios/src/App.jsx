@@ -62,7 +62,6 @@ export function App() {
 
 <GitHubUser username={"Marcoski"}/>
 <GithubUsers />
-      
     </div>
   );
 }
