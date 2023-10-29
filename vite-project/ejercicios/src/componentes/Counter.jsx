@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { CounterDisplay } from "./CounterDisplay";
 
 export function Counter({ start = 0 }) {
@@ -15,22 +15,23 @@ export function Counter({ start = 0 }) {
     }
   }, [counter, start]);
 
-  function increment() {
-    setCounter(counter + 1);
-  }
-  function decrement() {
-    setCounter(counter - 1);
-  }
-  function reset() {
-    setCounter(start);
-  }
+ 
+  const Increment = useCallback(function Increment(){
+    setCounter((counter) => counter + 1)
+  }, []);
+  const Decrement = useCallback(function Decrement(){
+    setCounter((counter) => counter - 1)
+  }, []);
+  const Reset = useCallback(function Reset(){
+    setCounter(start)
+  }, [start]);
 
   return (
     <div style={MyStyle}>
       <CounterDisplay counter={counter} />
-      <button onClick={increment}>INCREMENT</button>
-      <button onClick={decrement}>DECREMENT</button>
-      <button onClick={reset}>RESET</button>
+      <button onClick={Increment}>INCREMENT</button>
+      <button onClick={Decrement}>DECREMENT</button>
+      <button onClick={Reset}>RESET</button>
     </div>
   );
 }
